@@ -14,7 +14,7 @@
     <script>
         function getSound(){
             const name = document.getElementById('name').value
-            fetch(`http://localhost:3000/sound/${name}`)
+            fetch(`https://port-0-nodereview-3a9t2ble1gi34z.sel3.cloudtype.app/${name}`)
             .then((response) => response.json())
             .then((data) => {console.log(data)
                 if(data.img !== undefined){
